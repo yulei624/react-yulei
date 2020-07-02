@@ -1,9 +1,9 @@
 import React from 'react';
-export default class Home extends React.Component {
+export default class Zhu extends React.Component {
     render() {
         return (
             <div>
-                <h1>我是home</h1>
+                柱形图
             </div>
         );
     }

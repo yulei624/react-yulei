@@ -6,12 +6,11 @@ import { Redirect } from 'react-router-dom'
 import { userLogin } from "../../ajax/api"
 import { setLocal,getLocal } from '../../memary/saveLocalstroge'
 import saveMe from '../../units/saveMe'
-saveMe.user=getLocal()
+saveMe.user = getLocal()
 export default class Login extends React.Component {
-    
     render() {
         if (saveMe.user) {
-            return <Redirect to='/'></Redirect>
+            return <Redirect to='/admin'></Redirect>
         } else {
             return (
                 <div className='login'>

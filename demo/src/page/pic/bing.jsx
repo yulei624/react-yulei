@@ -1,9 +1,9 @@
 import React from 'react';
-export default class Chang extends React.Component {
+export default class Bing extends React.Component {
     render() {
         return (
             <div>
-                长方形
+                饼状图
             </div>
         );
     }

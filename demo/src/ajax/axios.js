@@ -8,18 +8,16 @@
 // }
 
 import axios from 'axios'
-
 export default function ajax(url = '', params = {}, type = 'GET') {
     // 1. 变量
     let promise;
-
     // 2. 返回一个promise对象
     return new Promise((resolve, reject) => {
         // 2.1 判断请求的类型
         if (type.toUpperCase() === 'GET') { // get请求
             // 2.2 拼接字符串
             let paramsStr = '';
-            // 2.3 遍历+
+            // 2.3 遍历
             Object.keys(params).forEach(key => {
                 paramsStr += key + '=' + params[key] + '&';
             });
@@ -42,5 +40,4 @@ export default function ajax(url = '', params = {}, type = 'GET') {
              reject(error);
         })
     });
-
 }

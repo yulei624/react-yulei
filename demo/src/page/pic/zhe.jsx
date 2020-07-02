@@ -1,9 +1,9 @@
 import React from 'react';
-export default class 正 extends React.Component {
+export default class Zhe extends React.Component {
     render() {
         return (
             <div>
-                正方形
+                折线图
             </div>
         );
     }
